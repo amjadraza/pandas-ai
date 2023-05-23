@@ -25,3 +25,7 @@ This document outlines the LLMs API wrappers included in the `pandasai`.
     options:
       show_root_heading: true
 
+::: pandasai.llm.google_palm
+    options:
+      show_root_heading: true
+

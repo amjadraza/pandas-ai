@@ -31,29 +31,30 @@ You can build and view this documentation project locally - we recommend that yo
 and dependency management tool.
 ```console
 # Install required Python dependencies (MkDocs etc.)
-poetry insall
+poetry insall --with docs
 # Run the mkdocs development server
 mkdocs serve
 ```
 
 Project Docs Structure 
 ----------------------
-
 If you are new to Read the Docs, you may want to refer to the [Read the Docs User documentation](https://docs.readthedocs.io/).
 
-Below is the rundown of documentation structure for `pandasai`, you need to:
+Below is the rundown of documentation structure for `pandasai`, you need to know:
 
 1. place your `docs/` folder alongside your Python project.
 2. copy `mkdocs.yml`, `.readthedocs.yaml` and the `docs/` folder into your project root.
-3. `docs/api.md` contains the API documentation created using `docstring`.
+3. `docs/API` contains the API documentation created using `docstring`. For any new module, add the links here
 4. Project is using standard Google Docstring Style.
 5. Rebuild the documenation locally to see that it works.
-1. Documentation are hosted on [Read the Docs tutorial](https://docs.readthedocs.io/en/stable/tutorial/)
+6. Documentation are hosted on [Read the Docs tutorial](https://docs.readthedocs.io/en/stable/tutorial/)
 
+> Define the release version in `mkdocs.yml` file.
 
 Read the Docs tutorial
 ----------------------
 
 To get started with Read the Docs, you may also refer to the 
 [Read the Docs tutorial](https://docs.readthedocs.io/en/stable/tutorial/). I
-t provides a full walk-through of building an example project similar to the one in this repository.
+
+With every release, build the documentation manually. 
